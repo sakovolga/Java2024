@@ -110,4 +110,10 @@ public class Handler {
                         LinkedHashMap::new));
     }
 
+    public static void printParticipants(HashMap<Team<? extends Participant>, Integer> map){
+        map.keySet().stream()
+                .flatMap(team -> team.getParticipantList().stream())
+                .forEach(participant -> System.out.println(participant));
+    }
+
 }

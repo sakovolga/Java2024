@@ -5,16 +5,35 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49c7eab4-079e-4105-b34a-36a514abb2b0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240125/taski/Book.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240125/taski/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240125/taski/taski.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/taski.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/WarAndPeace" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240109/CardCen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240201/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240201/taski/Course.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240201/taski/Department.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240201/taski/University.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240201/taski/UniversityContainer.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240201/taski/UniversityProcessor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240201/work/Template.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240201/work/Template2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240202/task1/1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240202/task1/HW.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240202/task1/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240202/task1/task.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240203/CardCen.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240203/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240203/taski.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_WarAndPeace/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HomeTask_240109/Adult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240109/Adult.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/HomeTask_240109/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240109/Generator.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/HomeTask_240109/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240109/Handler.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/HomeTask_240109/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240109/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HomeTask_240109/Participant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240109/Participant.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/HomeTask_240109/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240109/Solution.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/HomeTask_240109/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240109/Team.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HomeTask_240130/AdvancedFileOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240130/AdvancedFileOperations.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -38,38 +57,45 @@
   &quot;associatedIndex&quot;: 5
 }</component>
   <component name="ProjectId" id="2alMcU9lJalXVQAx48U1LRggHvc" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;Application.HomeTask_240109.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.HomeTask_240125.taski.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main1.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main2.executor&quot;: &quot;Run&quot;,
-    &quot;Application.Main3.executor&quot;: &quot;Run&quot;,
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/home/olga/IdeaProjects/Java2024&quot;,
-    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "Application.HomeTask_240109.Main.executor": "Run",
+    "Application.HomeTask_240125.taski.Main.executor": "Run",
+    "Application.Main.executor": "Run",
+    "Application.Main1.executor": "Run",
+    "Application.Main2.executor": "Run",
+    "Application.Main3.executor": "Run",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "git-widget-placeholder": "main",
+    "kotlin-language-version-configured": "true",
+    "last_opened_file_path": "/home/olga/IdeaProjects/Java2024/src/main/java/HomeTask_240203",
+    "project.structure.last.edited": "Modules",
+    "project.structure.proportion": "0.0",
+    "project.structure.side.proportion": "0.0"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/HomeTask_240203" />
+      <recent name="$PROJECT_DIR$/src/main/java/HomeTask_240202" />
       <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/src/main/java/HomeTask_240130" />
       <recent name="$PROJECT_DIR$/target" />
-      <recent name="$PROJECT_DIR$/src/main/java/HomeTask_240125" />
-      <recent name="$PROJECT_DIR$/src/main/java/HomeTask_240123" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="HomeTask_240109" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.HomeTask_240109.Main">
+  <component name="RunManager">
     <configuration name="HomeTask_240109.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="HomeTask_240109.Main" />
       <module name="Java2024" />
@@ -162,6 +188,9 @@
       <updated>1704888794121</updated>
     </task>
     <servers />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

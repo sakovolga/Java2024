@@ -5,7 +5,7 @@ import java.util.*;
 public class Team<T extends Participant> {
     private String teamName;
     private List<T> participantList = new ArrayList<>();
-    private ArrayList<Map.Entry<Team<? extends Participant>, Integer>> gameList;
+    private ArrayList<Map.Entry<Team<? extends Participant>, Integer>> gameList = new ArrayList<>();
     public Team(String teamName) {
         this.teamName = teamName;
     }

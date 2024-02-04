@@ -57,7 +57,8 @@ public class Main<T extends Participant> {
         //    (например, только Adult).
         System.out.println("Команды, где все участники принадлежат к одной категории:");
         System.out.println(Solution.getTeamsOfCertainCategory(allTeamsMap, Adult.class));
-
+        //    8. Команды с победами над определенной командой: Определить команды, которые выиграли у заданной команды.
+        Solution.getWinnersOfCertainTeam(allTeamsMap);
         //    9. Самый молодой участник среди всех команд:
         System.out.println("Самый молодой участник среди всех команд: " + Solution.getYoungestParticipant(allTeamsMap));
         //    10. Самая опытная команда: Определить команду с наибольшим суммарным возрастом участников.
@@ -74,9 +75,16 @@ public class Main<T extends Participant> {
         //    15. Вычислить средний балл для команд в каждой категории участников (Adult, Teenager, Pupil).
         System.out.println("Средний балл для команд в каждой категории участников:");
         Solution.getAverageAgeForEachCategory(allTeamsMap);
+        //    16. Найти команды, чьи баллы улучшались с каждой игрой.
+        System.out.println("Команды, чьи баллы улучшались с каждой игрой: " + Solution.getTeamsWithIncreasedPoints(allTeamsMap));
+        //    18. Список команд, которые имели ничейные результаты с заданной командой.
+        Solution.getTeamsWithDraw(allTeamsMap);
+
 
         //    20. Сравнить две команды по средним баллам и среднему возрасту участников.
         Solution.compareTwoTeams(allTeamsMap);
+
+        Handler.printParticipants(allTeamsMap);
 
     }
 }

@@ -90,7 +90,7 @@ public class Solution {
     }
 
     //    7. Команды с определенной категорией участников: Вывести команды, где все участники принадлежат к одной категории
-//            (например, только Adult).
+    //            (например, только Adult).
     public static <T extends Participant> List<Team<? extends Participant>> getTeamsOfCertainCategory
     (HashMap<Team<? extends Participant>, Integer> map, Class<T> participantClass) {
         return map.keySet().stream()
@@ -100,7 +100,23 @@ public class Solution {
                 .toList();
     }
 
-//    8. Команды с победами над определенной командой: Определить команды, которые выиграли у заданной команды.
+    //    8. Команды с победами над определенной командой: Определить команды, которые выиграли у заданной команды.
+    public static void getWinnersOfCertainTeam(HashMap<Team<? extends Participant>, Integer> map) {
+        // Выбираем произвольную команду
+        Team<? extends Participant> team = map.entrySet().stream()
+                .findFirst()
+                .map(Map.Entry::getKey)
+                .orElse(null);
+        System.out.println("Команды, победившие у команды " + team.getTeamName() + ": ");
+        try {
+            team.getGameList().stream()
+                    .filter(entry -> entry.getValue() == 10)
+                    .map(Map.Entry::getKey)
+                    .forEach(System.out::println);
+        } catch (NullPointerException e) {
+            System.out.println("Команда не сыграла ни одной игры");
+        }
+    }
 
     //    9. Самый молодой участник среди всех команд:
     public static Participant getYoungestParticipant(HashMap<Team<? extends Participant>, Integer> map) {
@@ -209,11 +225,36 @@ public class Solution {
                 .forEach((category, averageScore) -> System.out.println(category + ": " + averageScore));
     }
 
-//    16. Найти команды, чьи баллы улучшались с каждой игрой.
+    //    16. Найти команды, чьи баллы улучшались с каждой игрой.
+    public static List<Team<? extends Participant>> getTeamsWithIncreasedPoints(HashMap<Team<? extends Participant>, Integer> map) {
+        return map.keySet().stream()
+                .filter(team -> team.getGameList().stream().allMatch(e -> e.getValue() != 0))
+                .toList();
+    }
 
-    //    17. Выявить команды, которые не имеют проигрышей.
-//    18. Список команд, которые имели ничейные результаты с заданной командой.
-//    19. Вывести результаты всех игр между двумя конкретными командами.
+    //    17. Выявить команды, которые не имеют проигрышей. - это то же самое, что предыдущий метод
+    //    18. Список команд, которые имели ничейные результаты с заданной командой.
+    public static void getTeamsWithDraw(HashMap<Team<? extends Participant>, Integer> map) {
+
+            // Выбираем произвольную команду
+            Team<? extends Participant> team = map.entrySet().stream()
+                    .findFirst()
+                    .map(Map.Entry::getKey)
+                    .orElse(null);
+        System.out.println("Команды, которые имели ничейные результаты с командой " + team + ": ");
+        try {
+                    // Ищем команды с ничейными результатами
+                    team.getGameList().stream()
+                    .filter(entry -> entry.getValue() == 5)
+                    .map(Map.Entry::getKey)
+                    .forEach(System.out::println);
+        } catch (NullPointerException e) {
+            System.out.println("Команда ни разу не играла");
+        }
+
+    }
+
+    //    19. Вывести результаты всех игр между двумя конкретными командами.
 //    20. Сравнить две команды по средним баллам и среднему возрасту участников.
     public static void compareTwoTeams(HashMap<Team<? extends Participant>, Integer> map) {
         List<Map.Entry<Team<? extends Participant>, Integer>> listOfTwoTeams = map.entrySet().stream()

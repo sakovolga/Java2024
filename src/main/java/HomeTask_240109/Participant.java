@@ -3,10 +3,20 @@ package HomeTask_240109;
 public class Participant {
     private String name;
     private int age;
+    private String card;
 
-    public Participant(String name, int age) {
+    public String getCard() {
+        return card;
+    }
+
+    public void setCard(String card) {
+        this.card = card;
+    }
+
+    public Participant(String name, int age, String card) {
         this.name = name;
         this.age = age;
+        this.card = card;
     }
     public Participant(){}
     public String getName() {
@@ -30,6 +40,7 @@ public class Participant {
         return "Participant{" +
                 "name='" + name + '\'' +
                 ", age=" + age +
+                ", card='" + card + '\'' +
                 '}';
     }
 }

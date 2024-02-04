@@ -24,7 +24,6 @@ public class AdvancedFileOperations {
      * для эффективной работы с текстом.
      */
     public static void countWordsInFile() throws IOException {
-//        RandomAccessFile raf = new RandomAccessFile("example.txt", "rw");
         try(BufferedReader bf = new BufferedReader(new FileReader("prog.txt"));
             BufferedWriter bw = new BufferedWriter(new FileWriter("word_count.txt"))){
             long wordCount = bf.lines()
@@ -79,6 +78,7 @@ public class AdvancedFileOperations {
             }
             raf.seek(list.get(list.size()-1));
             bw.write(String.valueOf(raf.readLine()));
+            raf.close();
         } catch (IOException e){
             System.out.println("Ошибка ввода-вывода");
         }

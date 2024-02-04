@@ -14,11 +14,11 @@ public class Generator {
         ArrayList<T> teamList = new ArrayList<>();
         do {
             if (clazz == Adult.class) {
-                teamList.add((T) new Adult(FAKER.name().name(), RANDOM.nextInt(72) + 19));
+                teamList.add((T) new Adult(FAKER.name().name(), RANDOM.nextInt(72) + 19, CardCen.generateCard()));
             } else if (clazz == Pupil.class) {
-                teamList.add((T) new Pupil(FAKER.name().name(), RANDOM.nextInt(6) + 6));
+                teamList.add((T) new Pupil(FAKER.name().name(), RANDOM.nextInt(6) + 6, CardCen.generateCard()));
             } else if (clazz == TeenAger.class) {
-                teamList.add((T) new TeenAger(FAKER.name().name(), RANDOM.nextInt(7) + 12));
+                teamList.add((T) new TeenAger(FAKER.name().name(), RANDOM.nextInt(7) + 12, CardCen.generateCard()));
             }
         } while (teamList.size() != 4);
         team.setParticipantList(teamList);

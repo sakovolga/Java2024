@@ -5,35 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49c7eab4-079e-4105-b34a-36a514abb2b0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/WarAndPeace" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240109/CardCen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240201/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240201/taski/Course.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240201/taski/Department.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240201/taski/University.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240201/taski/UniversityContainer.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240201/taski/UniversityProcessor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240201/work/Template.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240201/work/Template2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240202/task1/1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240202/task1/HW.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240202/task1/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240202/task1/task.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240203/CardCen.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240203/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240203/taski.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_WarAndPeace/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240206/ABC1.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240206/ABC2.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240206/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240206/Major.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240206/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240206/StudentRegistry.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240206/taski.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240206/taski1.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/HomeTask_240206/MainTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/HomeTask_240206/StudentRegistryTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HomeTask_240109/Adult.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240109/Adult.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HomeTask_240109/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240109/Generator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HomeTask_240109/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240109/Handler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HomeTask_240109/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240109/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HomeTask_240109/Participant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240109/Participant.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HomeTask_240109/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240109/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HomeTask_240109/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240109/Team.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HomeTask_240130/AdvancedFileOperations.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240130/AdvancedFileOperations.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HomeTask_240109/CardCen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240109/CardCen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HomeTask_240202/task1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240202/task1/Main.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -43,7 +29,9 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="Enum" />
         <option value="Class" />
+        <option value="JUnit5 Test Class" />
       </list>
     </option>
   </component>
@@ -73,11 +61,43 @@
     "Application.Main1.executor": "Run",
     "Application.Main2.executor": "Run",
     "Application.Main3.executor": "Run",
+    "JUnit.MainTest.executor": "Run",
+    "JUnit.MainTest.getAbsoluteTest.executor": "Run",
+    "JUnit.MainTest.getDivWithZeroTest.executor": "Run",
+    "JUnit.MainTest.getDivWithoutZeroTest.executor": "Run",
+    "JUnit.MainTest.getFactorialTest.executor": "Run",
+    "JUnit.MainTest.getFactorialWithNegativeParamTest.executor": "Run",
+    "JUnit.MainTest.getFactorialWithZeroAndOneParamTest.executor": "Run",
+    "JUnit.MainTest.getMultTest.executor": "Run",
+    "JUnit.MainTest.getMultWithZeroTest.executor": "Run",
+    "JUnit.MainTest.getPowerTest.executor": "Run",
+    "JUnit.MainTest.getPowerWithZeroTest.executor": "Run",
+    "JUnit.MainTest.getSubTest.executor": "Run",
+    "JUnit.MainTest.getSumTest.executor": "Run",
+    "JUnit.MainTest.logarithmTest.executor": "Run",
+    "JUnit.MainTest.logarithmWithNagativeOrZeroParamTest.executor": "Debug",
+    "JUnit.MainTest.sinTest.executor": "Run",
+    "JUnit.MainTest.sqrtTest.executor": "Run",
+    "JUnit.MainTest.sqrtWithZeroAvdOneTest.executor": "Run",
+    "JUnit.StudentRegistryTest.addStudentTest.executor": "Run",
+    "JUnit.StudentRegistryTest.calculateAverageGradeTest.executor": "Run",
+    "JUnit.StudentRegistryTest.executor": "Run",
+    "JUnit.StudentRegistryTest.findStudentsByMajorTest.executor": "Run",
+    "JUnit.StudentRegistryTest.getAverageGradeByMajorTest.executor": "Run",
+    "JUnit.StudentRegistryTest.getStudentTest.executor": "Run",
+    "JUnit.StudentRegistryTest.getStudentsWithGradeAboveTest.executor": "Run",
+    "JUnit.StudentRegistryTest.getTotalNumberOfStudentsTest.executor": "Run",
+    "JUnit.StudentRegistryTest.isStudentPresentNegativeTest.executor": "Run",
+    "JUnit.StudentRegistryTest.isStudentPresentPositiveTest.executor": "Run",
+    "JUnit.StudentRegistryTest.listStudentsByYearTest.executor": "Run",
+    "JUnit.StudentRegistryTest.removeStudentTest.executor": "Run",
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
+    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/olga/IdeaProjects/Java2024/src/main/java/HomeTask_240203",
+    "last_opened_file_path": "/home/olga/IdeaProjects/Java2024/src/main/java/HomeTask_240206",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
     "project.structure.side.proportion": "0.0"
@@ -85,89 +105,109 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/HomeTask_240206" />
+      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/java/HomeTask_240203" />
       <recent name="$PROJECT_DIR$/src/main/java/HomeTask_240202" />
-      <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/java/HomeTask_240130" />
-      <recent name="$PROJECT_DIR$/target" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="HomeTask_240206" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="HomeTask_240109" />
     </key>
   </component>
-  <component name="RunManager">
-    <configuration name="HomeTask_240109.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HomeTask_240109.Main" />
+  <component name="RunManager" selected="JUnit.StudentRegistryTest">
+    <configuration name="StudentRegistryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Java2024" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HomeTask_240109.*" />
+          <option name="PATTERN" value="HomeTask_240206.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="HomeTask_240206" />
+      <option name="MAIN_CLASS_NAME" value="HomeTask_240206.StudentRegistryTest" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="HomeTask_240125.taski.Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HomeTask_240125.taski.Main" />
+    <configuration name="StudentRegistryTest.getAverageGradeByMajorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Java2024" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HomeTask_240125.taski.*" />
+          <option name="PATTERN" value="HomeTask_240206.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="HomeTask_240206" />
+      <option name="MAIN_CLASS_NAME" value="HomeTask_240206.StudentRegistryTest" />
+      <option name="METHOD_NAME" value="getAverageGradeByMajorTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main1" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HomeTask_240125.taski.Main1" />
+    <configuration name="StudentRegistryTest.getStudentsWithGradeAboveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Java2024" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HomeTask_240125.taski.*" />
+          <option name="PATTERN" value="HomeTask_240206.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="HomeTask_240206" />
+      <option name="MAIN_CLASS_NAME" value="HomeTask_240206.StudentRegistryTest" />
+      <option name="METHOD_NAME" value="getStudentsWithGradeAboveTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HomeTask_240125.taski.Main2" />
+    <configuration name="StudentRegistryTest.isStudentPresentNegativeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Java2024" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HomeTask_240125.taski.*" />
+          <option name="PATTERN" value="HomeTask_240206.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="HomeTask_240206" />
+      <option name="MAIN_CLASS_NAME" value="HomeTask_240206.StudentRegistryTest" />
+      <option name="METHOD_NAME" value="isStudentPresentNegativeTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="Main3" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="HomeTask_240125.taski.Main3" />
+    <configuration name="StudentRegistryTest.isStudentPresentPositiveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Java2024" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HomeTask_240125.taski.*" />
+          <option name="PATTERN" value="HomeTask_240206.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
+      <option name="PACKAGE_NAME" value="HomeTask_240206" />
+      <option name="MAIN_CLASS_NAME" value="HomeTask_240206.StudentRegistryTest" />
+      <option name="METHOD_NAME" value="isStudentPresentPositiveTest" />
+      <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.HomeTask_240109.Main" />
-        <item itemvalue="Application.Main3" />
-        <item itemvalue="Application.HomeTask_240125.taski.Main" />
-        <item itemvalue="Application.Main2" />
-        <item itemvalue="Application.Main1" />
+        <item itemvalue="JUnit.StudentRegistryTest" />
+        <item itemvalue="JUnit.StudentRegistryTest.isStudentPresentNegativeTest" />
+        <item itemvalue="JUnit.StudentRegistryTest.isStudentPresentPositiveTest" />
+        <item itemvalue="JUnit.StudentRegistryTest.getAverageGradeByMajorTest" />
+        <item itemvalue="JUnit.StudentRegistryTest.getStudentsWithGradeAboveTest" />
       </list>
     </recent_temporary>
   </component>

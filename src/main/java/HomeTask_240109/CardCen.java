@@ -5,9 +5,9 @@ import java.util.Random;
 
 public class CardCen {
     private static int resSum;
+    private static final Random random = new Random();
 
     public static String genUniqueCardNum() {
-        Random random = new Random();
         StringBuilder sb = new StringBuilder();
         for (int i = 0; i < 16; i++) {
             sb.append(random.nextInt(10));
@@ -54,29 +54,36 @@ public class CardCen {
         LocalDate currentDate = LocalDate.now();
         int currentMonth = currentDate.getMonthValue();
         int currentYear = currentDate.getYear();
-        String month;
-        if (currentMonth > 9) {
-            month = String.valueOf(currentMonth);
+        String year = String.valueOf((random.nextInt(currentYear, currentYear + 6)) - 2000);
+        int month;
+        if (year.equals(String.valueOf(currentYear - 2000))){
+            month = random.nextInt(currentMonth, 13);
+        } else if (year.equals(String.valueOf(currentYear + 5 - 2000))) {
+            month = random.nextInt(1, currentMonth + 1);
         } else {
-            month = "0" + String.valueOf(currentMonth);
+            month = random.nextInt(1, 13);
         }
-        String year = String.valueOf(currentYear - 2000 + 5);
-        return month + year;
+        String correctMonth;
+        if (month > 9) {
+            correctMonth = String.valueOf(month);
+        } else {
+            correctMonth = "0" + month;
+        }
+        return correctMonth + year;
     }
 
-    public static String generateCVV(){
-        Random random = new Random();
+    public static String generateCVV() {
         String[] cvv = new String[3];
-        for (int i = 0; i < 3; i++){
+        for (int i = 0; i < 3; i++) {
             cvv[i] = String.valueOf(random.nextInt(10));
         }
         return String.join("", cvv);
     }
 
-    public static String generateCard(){
+    public static String generateCard() {
         String cardNum = genUniqueCardNum();
         String correctCardNum;
-        if (!isTrue(cardNum)){
+        if (!isTrue(cardNum)) {
             correctCardNum = fixCardNum(cardNum);
         } else correctCardNum = cardNum;
         String validity = generateValidity();

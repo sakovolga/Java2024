@@ -24,7 +24,7 @@ public class StudentRegistry {
 //    3. findStudentsByMajor(String major) - возвращает список студентов, обучающихся на указанной специальности.
     public List<Student> findStudentsByMajor(String major){
         return studentMap.values().stream()
-                .filter(student -> student.getMajor() == Major.valueOf(major))
+                .filter(student -> student.getMajor().equals(Major.valueOf(major)))
                 .toList();
     }
 //    4. calculateAverageGrade() - вычисляет средний балл среди всех студентов.
@@ -61,9 +61,8 @@ public class StudentRegistry {
     }
 //    10. isStudentPresent(String email) - проверяет, существует ли студент с заданным email в реестре.
     public boolean isStudentPresent(String email){
-        List<Student> list = studentMap.values().stream()
-                .filter(student -> student.getEmail().equals(email))
-                .toList();
-        return !list.isEmpty();
+        return studentMap.values().stream()
+                .anyMatch(student -> student.getEmail().equals(email));
+
     }
 }

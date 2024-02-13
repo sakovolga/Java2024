@@ -12,31 +12,23 @@ public class Main<T extends Participant> {
 
     public static void main(String[] args) throws MapOfTeamIsEmptyExeption, ParticipantAgeIsNull {
 
-//        Pupil p1 = new Pupil();
-//        TeenAger t1 = new TeenAger();
-//        Adult a1 = new Adult();
-
-//        List<Team<Pupil>> pupilTeamList = generate25(Pupil.class);
-//        List<Team<TeenAger>> teenAgerTeamList = generate25(TeenAger.class);
-//        List<Team<Adult>> adultTeamList = generate25(Adult.class);
-        List<List<Team<? extends Participant>>> listOf75Team = Generator.generate75();
-        List<Team<? extends Participant>> pupilTeamList = listOf75Team.get(0);
-        List<Team<? extends Participant>> teenAgerTeamList = listOf75Team.get(1);
-        List<Team<? extends Participant>> adultTeamList = listOf75Team.get(2);
+        List<List<Team<Participant>>> listOf75Team = Generator.generate75();
+        List<Team<Participant>> pupilTeamList = listOf75Team.get(0);
+        List<Team<Participant>> teenAgerTeamList = listOf75Team.get(1);
+        List<Team<Participant>> adultTeamList = listOf75Team.get(2);
 
 
         System.out.println("----Таблица игр младшей группы----");
-        HashMap<Team<? extends Participant>, Integer> pupilMap = Handler.play(pupilTeamList);
-//        HashMap<Team<T>, Integer> pupilMapT = pupilMap;
+        HashMap<Team<Participant>, Integer> pupilMap = Handler.play(pupilTeamList);
         Handler.printTableOfGames(pupilMap);
         System.out.println("----Таблица игр подростков----");
-        HashMap<Team<? extends Participant>, Integer> teenagerMap = Handler.play(teenAgerTeamList);
+        HashMap<Team<Participant>, Integer> teenagerMap = Handler.play(teenAgerTeamList);
         Handler.printTableOfGames(teenagerMap);
         System.out.println("----Таблица игр взрослых----");
-        HashMap<Team<? extends Participant>, Integer> adultMap = Handler.play(adultTeamList);
+        HashMap<Team<Participant>, Integer> adultMap = Handler.play(adultTeamList);
         Handler.printTableOfGames(adultMap);
 
-        HashMap<Team<? extends Participant>, Integer> allTeamsMap = Solution.getAllTeamsMap(pupilMap, teenagerMap, adultMap);
+        HashMap<Team<Participant>, Integer> allTeamsMap = Solution.getAllTeamsMap(pupilMap, teenagerMap, adultMap);
         //    1. Найти команду с максимальными баллами:
         System.out.println("Команда с максимальными баллами: " + Solution.findTeamWithMaxPoints(allTeamsMap));
         //    2. Подсчет общего количества баллов:
@@ -55,7 +47,7 @@ public class Main<T extends Participant> {
         //    7. Команды с определенной категорией участников:
         //    Вывести команды, где все участники принадлежат к одной категории
         //    (например, только Adult).
-        System.out.println("Команды, где все участники принадлежат к одной категории:");
+        System.out.println("Команды, где все участники принадлежат к категории Adult:");
         System.out.println(Solution.getTeamsOfCertainCategory(allTeamsMap, Adult.class));
         //    8. Команды с победами над определенной командой: Определить команды, которые выиграли у заданной команды.
         Solution.getWinnersOfCertainTeam(allTeamsMap);

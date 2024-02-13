@@ -5,21 +5,30 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="49c7eab4-079e-4105-b34a-36a514abb2b0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240206/ABC1.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240206/ABC2.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240206/Main.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240206/Major.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240206/Student.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240206/StudentRegistry.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240206/taski.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240206/taski1.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/HomeTask_240206/MainTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/HomeTask_240206/StudentRegistryTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240208_Mock/taski/Book.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240208_Mock/taski/BookRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240208_Mock/taski/LibraryManager.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240209_Mock/taski2/Main.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240209_Mock/taski2/NotificationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240209_Mock/taski2/PaymentService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240209_Mock/taski2/SimpleNotificationService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240209_Mock/taski2/SimpleTransactionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240209_Mock/taski2/Transaction.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240209_Mock/taski2/TransactionRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/HomeTask_240109/GeneratorTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/HomeTask_240208_Mock/taski/LibraryManagerTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/HomeTask_240209_Mock/taski2/My___PaymentServiceTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/HomeTask_240209_Mock/taski2/PaymentServiceTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HomeTask_240109/CardCen.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240109/CardCen.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HomeTask_240109/Generator.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240109/Generator.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HomeTask_240109/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240109/Handler.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HomeTask_240109/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240109/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HomeTask_240109/Participant.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240109/Participant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HomeTask_240109/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240109/Solution.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HomeTask_240109/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240109/Team.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/HomeTask_240202/task1/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240202/task1/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/HomeTask_240206/StudentRegistry.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240206/StudentRegistry.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -30,8 +39,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -61,6 +70,13 @@
     "Application.Main1.executor": "Run",
     "Application.Main2.executor": "Run",
     "Application.Main3.executor": "Run",
+    "JUnit.GeneratorTest.executor": "Run",
+    "JUnit.GeneratorTest.generate25Test.executor": "Run",
+    "JUnit.GeneratorTest.generate75Test.executor": "Run",
+    "JUnit.GeneratorTest.generateTeamTest.executor": "Run",
+    "JUnit.LibraryManagerTest.findAllBooks.executor": "Run",
+    "JUnit.LibraryManagerTest.findBookByIdTest.executor": "Run",
+    "JUnit.LibraryManagerTest.whenFindById_thenReturnBook.executor": "Run",
     "JUnit.MainTest.executor": "Run",
     "JUnit.MainTest.getAbsoluteTest.executor": "Run",
     "JUnit.MainTest.getDivWithZeroTest.executor": "Run",
@@ -79,6 +95,23 @@
     "JUnit.MainTest.sinTest.executor": "Run",
     "JUnit.MainTest.sqrtTest.executor": "Run",
     "JUnit.MainTest.sqrtWithZeroAvdOneTest.executor": "Run",
+    "JUnit.MyPaymentServiceTest.adjustPaymentScenario2Test.executor": "Run",
+    "JUnit.MyPaymentServiceTest.adjustPaymentScenario3Test.executor": "Run",
+    "JUnit.MyPaymentServiceTest.adjustPaymentTest.executor": "Run",
+    "JUnit.MyPaymentServiceTest.cancelPayment.executor": "Run",
+    "JUnit.MyPaymentServiceTest.cancelPaymentTest.executor": "Run",
+    "JUnit.MyPaymentServiceTest.confirmPaymentTest.executor": "Run",
+    "JUnit.MyPaymentServiceTest.freezeTransactionTest.executor": "Run",
+    "JUnit.MyPaymentServiceTest.makePaymentPositiveTest.executor": "Run",
+    "JUnit.MyPaymentServiceTest.refundPaymentTest.executor": "Run",
+    "JUnit.MyPaymentServiceTest.schedulePaymentTest.executor": "Run",
+    "JUnit.MyPaymentServiceTest.unfreezeTransactionTest.executor": "Run",
+    "JUnit.MyPaymentServiceTest.verifyPaymentTest.executor": "Run",
+    "JUnit.PaymentServiceTest.adjustPaymentTest.executor": "Run",
+    "JUnit.PaymentServiceTest.executor": "Run",
+    "JUnit.PaymentServiceTest.makePaymentNegativeTest.executor": "Run",
+    "JUnit.PaymentServiceTest.refundPaymentNegativeTest.executor": "Run",
+    "JUnit.PaymentServiceTest.refundPaymentPositiveTest.executor": "Run",
     "JUnit.StudentRegistryTest.addStudentTest.executor": "Run",
     "JUnit.StudentRegistryTest.calculateAverageGradeTest.executor": "Run",
     "JUnit.StudentRegistryTest.executor": "Run",
@@ -97,105 +130,105 @@
     "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
     "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/olga/IdeaProjects/Java2024/src/main/java/HomeTask_240206",
+    "last_opened_file_path": "/home/olga/IdeaProjects/Java2024/src/main/java/HomeTask_240209_Mock",
     "project.structure.last.edited": "Modules",
     "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0"
+    "project.structure.side.proportion": "0.0",
+    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
   }
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/main/java/HomeTask_240209_Mock" />
+      <recent name="$PROJECT_DIR$/src/main/java/HomeTask_240208_Mock" />
       <recent name="$PROJECT_DIR$/src/main/java/HomeTask_240206" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/src/main/java/HomeTask_240203" />
-      <recent name="$PROJECT_DIR$/src/main/java/HomeTask_240202" />
-      <recent name="$PROJECT_DIR$/src/main/java/HomeTask_240130" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
     </key>
     <key name="CreateTestDialog.RecentsKey">
+      <recent name="HomeTask_240209_Mock.taski2" />
+      <recent name="HomeTask_240208_Mock.taski" />
       <recent name="HomeTask_240206" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="HomeTask_240109" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.StudentRegistryTest">
-    <configuration name="StudentRegistryTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.GeneratorTest">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HomeTask_240109.Main" />
       <module name="Java2024" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HomeTask_240206.*" />
+          <option name="PATTERN" value="HomeTask_240109.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="HomeTask_240206" />
-      <option name="MAIN_CLASS_NAME" value="HomeTask_240206.StudentRegistryTest" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="GeneratorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Java2024" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="HomeTask_240109.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="HomeTask_240109" />
+      <option name="MAIN_CLASS_NAME" value="HomeTask_240109.GeneratorTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentRegistryTest.getAverageGradeByMajorTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GeneratorTest.generate25Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Java2024" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HomeTask_240206.*" />
+          <option name="PATTERN" value="HomeTask_240109.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="HomeTask_240206" />
-      <option name="MAIN_CLASS_NAME" value="HomeTask_240206.StudentRegistryTest" />
-      <option name="METHOD_NAME" value="getAverageGradeByMajorTest" />
+      <option name="PACKAGE_NAME" value="HomeTask_240109" />
+      <option name="MAIN_CLASS_NAME" value="HomeTask_240109.GeneratorTest" />
+      <option name="METHOD_NAME" value="generate25Test(java.lang.Class)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentRegistryTest.getStudentsWithGradeAboveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GeneratorTest.generate75Test" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Java2024" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HomeTask_240206.*" />
+          <option name="PATTERN" value="HomeTask_240109.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="HomeTask_240206" />
-      <option name="MAIN_CLASS_NAME" value="HomeTask_240206.StudentRegistryTest" />
-      <option name="METHOD_NAME" value="getStudentsWithGradeAboveTest" />
+      <option name="PACKAGE_NAME" value="HomeTask_240109" />
+      <option name="MAIN_CLASS_NAME" value="HomeTask_240109.GeneratorTest" />
+      <option name="METHOD_NAME" value="generate75Test" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentRegistryTest.isStudentPresentNegativeTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="GeneratorTest.generateTeamTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Java2024" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="HomeTask_240206.*" />
+          <option name="PATTERN" value="HomeTask_240109.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
-      <option name="PACKAGE_NAME" value="HomeTask_240206" />
-      <option name="MAIN_CLASS_NAME" value="HomeTask_240206.StudentRegistryTest" />
-      <option name="METHOD_NAME" value="isStudentPresentNegativeTest" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="StudentRegistryTest.isStudentPresentPositiveTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Java2024" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="HomeTask_240206.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="HomeTask_240206" />
-      <option name="MAIN_CLASS_NAME" value="HomeTask_240206.StudentRegistryTest" />
-      <option name="METHOD_NAME" value="isStudentPresentPositiveTest" />
+      <option name="PACKAGE_NAME" value="HomeTask_240109" />
+      <option name="MAIN_CLASS_NAME" value="HomeTask_240109.GeneratorTest" />
+      <option name="METHOD_NAME" value="generateTeamTest(java.lang.Class)" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -203,11 +236,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.StudentRegistryTest" />
-        <item itemvalue="JUnit.StudentRegistryTest.isStudentPresentNegativeTest" />
-        <item itemvalue="JUnit.StudentRegistryTest.isStudentPresentPositiveTest" />
-        <item itemvalue="JUnit.StudentRegistryTest.getAverageGradeByMajorTest" />
-        <item itemvalue="JUnit.StudentRegistryTest.getStudentsWithGradeAboveTest" />
+        <item itemvalue="JUnit.GeneratorTest" />
+        <item itemvalue="JUnit.GeneratorTest.generate75Test" />
+        <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.GeneratorTest.generate25Test" />
+        <item itemvalue="JUnit.GeneratorTest.generateTeamTest" />
       </list>
     </recent_temporary>
   </component>
@@ -239,6 +272,20 @@
           <url>file://$PROJECT_DIR$/src/main/java/HomeTask_240125/taski/Main.java</url>
           <line>47</line>
           <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/test/java/HomeTask_240208_Mock/taski/LibraryManagerTest.java</url>
+          <line>39</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-method">
+          <url>file://$PROJECT_DIR$/src/test/java/HomeTask_240209_Mock/taski2/My___PaymentServiceTest.java</url>
+          <line>42</line>
+          <properties class="HomeTask_240209_Mock.taski2.MyPaymentServiceTest" method="adjustPaymentScenario1Test">
+            <option name="EMULATED" value="true" />
+            <option name="WATCH_EXIT" value="false" />
+          </properties>
+          <option name="timeStamp" value="10" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

@@ -5,24 +5,24 @@ import java.util.stream.Collectors;
 
 public class Handler {
 
-    public static HashMap<Team<? extends Participant>, Integer> play(List<Team<? extends Participant>> list) {
-        HashMap<Team<? extends Participant>, Integer> playersMap = playEachOther(list);
+    public static HashMap<Team<Participant>, Integer> play(List<Team<Participant>> list) {
+        HashMap<Team<Participant>, Integer> playersMap = playEachOther(list);
         while (!isUnique(playersMap)) {
-            HashMap<Team<? extends Participant>, Integer> doublePlayersMap = new HashMap<>(getOneDoubleTeam(playersMap));
+            HashMap<Team<Participant>, Integer> doublePlayersMap = new HashMap<>(getOneDoubleTeam(playersMap));
             playersMap = playAnotherOneTour(playersMap, doublePlayersMap);
         }
         return sortHashMap1(playersMap);
     }
 
-    public static <T extends Participant> void printTableOfGames(HashMap<Team<? extends Participant>, Integer> map) {
+    public static void printTableOfGames(HashMap<Team<Participant>, Integer> map) {
         for (Map.Entry entry : map.entrySet()) {
             System.out.println(entry);
         }
     }
 
-    public static HashMap<Team<? extends Participant>, Integer> getOneDoubleTeam
-            (Map<Team<? extends Participant>, Integer> map) {
-        Map<Team<? extends Participant>, Integer> map1 = map.entrySet().stream()
+    public static HashMap<Team<Participant>, Integer> getOneDoubleTeam
+            (Map<Team<Participant>, Integer> map) {
+        Map<Team<Participant>, Integer> map1 = map.entrySet().stream()
                 .collect(Collectors.groupingBy(Map.Entry::getValue))
                 .entrySet()
                 .stream().filter(value -> value.getValue().size() > 1)
@@ -32,16 +32,13 @@ public class Handler {
         return new HashMap<>(map1);
     }
 
-    public static <T extends Participant> boolean isUnique(HashMap<Team<? extends Participant>, Integer> map) {
-        int count = (int) map.values().stream()
-                .distinct()
-                .count();
-        return count == map.size();
+    public static boolean isUnique(HashMap<Team<Participant>, Integer> map) {
+        return map.values().stream().distinct().count() == map.size();
     }
 
-    public static <T extends Participant> HashMap<Team<? extends Participant>, Integer> playAnotherOneTour
-            (HashMap<Team<? extends Participant>, Integer> map, HashMap<Team<? extends Participant>, Integer> doublePlayersMap) {
-        List<Team<? extends Participant>> list = doublePlayersMap.keySet().stream().toList();
+    public static HashMap<Team<Participant>, Integer> playAnotherOneTour
+            (HashMap<Team<Participant>, Integer> map, HashMap<Team<Participant>, Integer> doublePlayersMap) {
+        List<Team<Participant>> list = doublePlayersMap.keySet().stream().toList();
         for (int i = 0; i < list.size() - 1; i++) {
             for (int j = i + 1; j < list.size(); j++) {
                 int point = list.get(i).rePlay(list.get(j));
@@ -59,10 +56,10 @@ public class Handler {
         return map;
     }
 
-    public static HashMap<Team<? extends Participant>, Integer> playEachOther
-            (List<Team<? extends Participant>> list) {
-        HashMap<Team<? extends Participant>, Integer> points = new HashMap<>();
-        for (Team<? extends Participant> team : list) {
+    public static HashMap<Team<Participant>, Integer> playEachOther
+            (List<Team<Participant>> list) {
+        HashMap<Team<Participant>, Integer> points = new HashMap<>();
+        for (Team<Participant> team : list) {
             points.put(team, 0);
         }
         for (int i = 0; i < list.size(); i++) {
@@ -95,12 +92,12 @@ public class Handler {
         return sortHashMap1(points);
     }
 
-    public static HashMap<Team<? extends Participant>, Integer> sortHashMap1
-            (HashMap<Team<? extends Participant>, Integer> map) {
+    public static HashMap<Team<Participant>, Integer> sortHashMap1
+            (HashMap<Team<Participant>, Integer> map) {
         return map.entrySet().stream()
-                .sorted(new Comparator<Map.Entry<Team<? extends Participant>, Integer>>() {
+                .sorted(new Comparator<Map.Entry<Team<Participant>, Integer>>() {
                     @Override
-                    public int compare(Map.Entry<Team<? extends Participant>, Integer> o1, Map.Entry<Team<? extends Participant>, Integer> o2) {
+                    public int compare(Map.Entry<Team<Participant>, Integer> o1, Map.Entry<Team<Participant>, Integer> o2) {
                         return o2.getValue().compareTo(o1.getValue());
                     }
                 })
@@ -110,7 +107,7 @@ public class Handler {
                         LinkedHashMap::new));
     }
 
-    public static void printParticipants(HashMap<Team<? extends Participant>, Integer> map){
+    public static void printParticipants(HashMap<Team<Participant>, Integer> map){
         map.keySet().stream()
                 .flatMap(team -> team.getParticipantList().stream())
                 .forEach(participant -> System.out.println(participant));

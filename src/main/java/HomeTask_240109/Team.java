@@ -31,6 +31,19 @@ public class Team<T extends Participant> {
     }
 
     @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Team<?> team = (Team<?>) o;
+        return Objects.equals(teamName, team.teamName);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(teamName);
+    }
+
+    @Override
     public String toString() {
         return teamName;
     }
@@ -51,4 +64,5 @@ public class Team<T extends Participant> {
             return 1;   //Победа
         } else return 0;   //Проигрыш
     }
+
 }

@@ -6,11 +6,11 @@ import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
 public class Solution {
-    public static <T extends Participant> HashMap<Team<? extends Participant>, Integer> getAllTeamsMap(
-            HashMap<Team<? extends Participant>, Integer> pupil,
-            HashMap<Team<? extends Participant>, Integer> teenager,
-            HashMap<Team<? extends Participant>, Integer> adult) {
-        HashMap<Team<? extends Participant>, Integer> allTeamsMap = new HashMap<>(pupil);
+    public static HashMap<Team<Participant>, Integer> getAllTeamsMap(
+            HashMap<Team<Participant>, Integer> pupil,
+            HashMap<Team<Participant>, Integer> teenager,
+            HashMap<Team<Participant>, Integer> adult) {
+        HashMap<Team<Participant>, Integer> allTeamsMap = new HashMap<>(pupil);
         allTeamsMap.putAll(teenager);
         allTeamsMap.putAll(adult);
         System.out.println(allTeamsMap.size());
@@ -18,8 +18,8 @@ public class Solution {
     }
 
     //    1. Найти команду с максимальными баллами:
-    public static <T extends Participant> Team<? extends Participant> findTeamWithMaxPoints(
-            HashMap<Team<? extends Participant>, Integer> map) {
+    public static <T extends Participant> Team<Participant> findTeamWithMaxPoints(
+            HashMap<Team<Participant>, Integer> map) {
         return map.entrySet().stream()
                 .max(Comparator.comparing(Map.Entry::getValue))
                 .get()
@@ -27,7 +27,7 @@ public class Solution {
     }
 
     //    2. Подсчет общего количества баллов:
-    public static int findSumOfPoints(HashMap<Team<? extends Participant>, Integer> map)
+    public static int findSumOfPoints(HashMap<Team<Participant>, Integer> map)
             throws MapOfTeamIsEmptyExeption {
         if (map.isEmpty()) {
             throw new MapOfTeamIsEmptyExeption("Нет ни одной команды!");
@@ -38,8 +38,8 @@ public class Solution {
     }
 
     //    3. Список команд без баллов:
-    public static List<Team<? extends Participant>> getTeamsWithoutPoints(
-            HashMap<Team<? extends Participant>, Integer> map) {
+    public static List<Team<Participant>> getTeamsWithoutPoints(
+            HashMap<Team<Participant>, Integer> map) {
         return map.entrySet().stream()
                 .filter(e -> e.getValue() == 0)
                 .map(Map.Entry::getKey)
@@ -47,8 +47,7 @@ public class Solution {
     }
 
     //    4. Средний возраст участников в каждой команде:
-    public static void getAverageAgeOfEachTeam
-    (HashMap<Team<? extends Participant>, Integer> map) {
+    public static void getAverageAgeOfEachTeam(HashMap<Team<Participant>, Integer> map) {
         map.keySet()
                 .forEach(team -> {
                     System.out.print(team);
@@ -61,8 +60,7 @@ public class Solution {
     }
 
     //    5. Команды с баллами выше среднего:
-    public static List<Team<? extends Participant>> getTeamsWithPointMoreThenAverage
-    (HashMap<Team<? extends Participant>, Integer> map) {
+    public static List<Team<Participant>> getTeamsWithPointMoreThenAverage(HashMap<Team<Participant>, Integer> map) {
         double average = map.values().stream()
                 .mapToDouble(Integer::doubleValue)
                 .average()
@@ -74,12 +72,12 @@ public class Solution {
     }
 
     //    6. Сортировка команд по баллам:
-    public static <T extends Participant> HashMap<Team<? extends Participant>, Integer> sortHashMap
-    (HashMap<Team<? extends Participant>, Integer> map) {
+    public static <T extends Participant> HashMap<Team<Participant>, Integer> sortHashMap
+    (HashMap<Team<Participant>, Integer> map) {
         return map.entrySet().stream()
-                .sorted(new Comparator<Map.Entry<Team<? extends Participant>, Integer>>() {
+                .sorted(new Comparator<Map.Entry<Team<Participant>, Integer>>() {
                     @Override
-                    public int compare(Map.Entry<Team<? extends Participant>, Integer> o1, Map.Entry<Team<? extends Participant>, Integer> o2) {
+                    public int compare(Map.Entry<Team<Participant>, Integer> o1, Map.Entry<Team<Participant>, Integer> o2) {
                         return o2.getValue().compareTo(o1.getValue());
                     }
                 })
@@ -91,8 +89,8 @@ public class Solution {
 
     //    7. Команды с определенной категорией участников: Вывести команды, где все участники принадлежат к одной категории
     //            (например, только Adult).
-    public static <T extends Participant> List<Team<? extends Participant>> getTeamsOfCertainCategory
-    (HashMap<Team<? extends Participant>, Integer> map, Class<T> participantClass) {
+    public static <T extends Participant> List<Team<Participant>> getTeamsOfCertainCategory
+    (HashMap<Team<Participant>, Integer> map, Class<T> participantClass) {
         return map.keySet().stream()
                 .filter(team ->
                         team.getParticipantList().stream()
@@ -101,9 +99,9 @@ public class Solution {
     }
 
     //    8. Команды с победами над определенной командой: Определить команды, которые выиграли у заданной команды.
-    public static void getWinnersOfCertainTeam(HashMap<Team<? extends Participant>, Integer> map) {
+    public static void getWinnersOfCertainTeam(HashMap<Team<Participant>, Integer> map) {
         // Выбираем произвольную команду
-        Team<? extends Participant> team = map.entrySet().stream()
+        Team<Participant> team = map.entrySet().stream()
                 .findFirst()
                 .map(Map.Entry::getKey)
                 .orElse(null);
@@ -119,7 +117,7 @@ public class Solution {
     }
 
     //    9. Самый молодой участник среди всех команд:
-    public static Participant getYoungestParticipant(HashMap<Team<? extends Participant>, Integer> map) {
+    public static Participant getYoungestParticipant(HashMap<Team<Participant>, Integer> map) {
         return map.keySet().stream()
                 .flatMap(team -> team.getParticipantList().stream())
                 .min(Comparator.comparing(Participant::getAge))
@@ -127,9 +125,9 @@ public class Solution {
     }
 
     //    10. Самая опытная команда: Определить команду с наибольшим суммарным возрастом участников.
-    public static Team<? extends Participant> findTheMostExperiencedTeam
-    (HashMap<Team<? extends Participant>, Integer> map) throws ParticipantAgeIsNull {
-        Team<? extends Participant> experiencedTteam = map.keySet().stream()
+    public static Team<Participant> findTheMostExperiencedTeam
+    (HashMap<Team<Participant>, Integer> map) throws ParticipantAgeIsNull {
+        Team<Participant> experiencedTteam = map.keySet().stream()
                 .collect(Collectors.toMap(
                         team -> team,
                         team -> team.getParticipantList().stream()
@@ -146,8 +144,7 @@ public class Solution {
     }
 
     //    11. Команды с участниками в определенном возрастном диапазоне:
-    public static List<Team<? extends Participant>> getAdeRange
-    (HashMap<Team<? extends Participant>, Integer> map, int minAge, int maxAge) {
+    public static List<Team<Participant>> getAdeRange(HashMap<Team<Participant>, Integer> map, int minAge, int maxAge) {
         return map.keySet().stream()
                 .filter(team -> team.getParticipantList().stream().
                         allMatch(participant ->
@@ -156,7 +153,7 @@ public class Solution {
     }
 
     //    12. Имена участников по убыванию возраста:
-    public static Map<String, Integer> getOrderByAge(HashMap<Team<? extends Participant>, Integer> map) {
+    public static Map<String, Integer> getOrderByAge(HashMap<Team<Participant>, Integer> map) {
         return map.keySet().stream()
                 .flatMap(team -> team.getParticipantList().stream())
                 .collect(Collectors.toMap(Participant::getName,
@@ -171,7 +168,7 @@ public class Solution {
     }
 
     //    13. Найти команду с наибольшим разбросом возрастов участников.
-    public static String getGreatestAgeRange(HashMap<Team<? extends Participant>, Integer> map) {
+    public static String getGreatestAgeRange(HashMap<Team<Participant>, Integer> map) {
         return Objects.requireNonNull(map.keySet().stream()
                         .collect(Collectors.toMap(Team::getTeamName,
                                 team -> {
@@ -188,7 +185,7 @@ public class Solution {
     }
 
     //    14. Найти все пары команд, чьи участники имеют одинаковый суммарный возраст.
-    public static void getTeamPairWithEqualsSummaryAge(HashMap<Team<? extends Participant>, Integer> map) {
+    public static void getTeamPairWithEqualsSummaryAge(HashMap<Team<Participant>, Integer> map) {
         map.keySet().stream()
                 .collect(Collectors.toMap(Team::getTeamName,
                         team -> team.getParticipantList().stream().
@@ -204,7 +201,7 @@ public class Solution {
     }
 
     //    15. Вычислить средний балл для команд в каждой категории участников (Adult, Teenager, Pupil).
-    public static void getAverageAgeForEachCategory(HashMap<Team<? extends Participant>, Integer> map) {
+    public static void getAverageAgeForEachCategory(HashMap<Team<Participant>, Integer> map) {
         map.entrySet().stream()
                 .collect(Collectors.groupingBy(
                         entry -> {
@@ -226,7 +223,7 @@ public class Solution {
     }
 
     //    16. Найти команды, чьи баллы улучшались с каждой игрой.
-    public static List<Team<? extends Participant>> getTeamsWithIncreasedPoints(HashMap<Team<? extends Participant>, Integer> map) {
+    public static List<Team<Participant>> getTeamsWithIncreasedPoints(HashMap<Team<Participant>, Integer> map) {
         return map.keySet().stream()
                 .filter(team -> team.getGameList().stream().allMatch(e -> e.getValue() != 0))
                 .toList();
@@ -234,10 +231,10 @@ public class Solution {
 
     //    17. Выявить команды, которые не имеют проигрышей. - это то же самое, что предыдущий метод
     //    18. Список команд, которые имели ничейные результаты с заданной командой.
-    public static void getTeamsWithDraw(HashMap<Team<? extends Participant>, Integer> map) {
+    public static void getTeamsWithDraw(HashMap<Team<Participant>, Integer> map) {
 
             // Выбираем произвольную команду
-            Team<? extends Participant> team = map.entrySet().stream()
+            Team<Participant> team = map.entrySet().stream()
                     .findFirst()
                     .map(Map.Entry::getKey)
                     .orElse(null);
@@ -256,12 +253,12 @@ public class Solution {
 
     //    19. Вывести результаты всех игр между двумя конкретными командами.
 //    20. Сравнить две команды по средним баллам и среднему возрасту участников.
-    public static void compareTwoTeams(HashMap<Team<? extends Participant>, Integer> map) {
-        List<Map.Entry<Team<? extends Participant>, Integer>> listOfTwoTeams = map.entrySet().stream()
+    public static void compareTwoTeams(HashMap<Team<Participant>, Integer> map) {
+        List<Map.Entry<Team<Participant>, Integer>> listOfTwoTeams = map.entrySet().stream()
                 .limit(2)
                 .toList();
-        Team<? extends Participant> team1 = listOfTwoTeams.get(0).getKey();
-        Team<? extends Participant> team2 = listOfTwoTeams.get(1).getKey();
+        Team<Participant> team1 = listOfTwoTeams.get(0).getKey();
+        Team<Participant> team2 = listOfTwoTeams.get(1).getKey();
         double team1Average = (double) (listOfTwoTeams.get(0).getValue()) / 24;
         double team2Average = (double) (listOfTwoTeams.get(1).getValue()) / 24;
         System.out.println("Сравнение команд " + team1 + " и " + team2 + " по средним баллам и возрасту:");

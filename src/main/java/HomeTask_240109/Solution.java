@@ -2,6 +2,8 @@ package HomeTask_240109;
 
 import java.util.*;
 import java.util.function.Function;
+import java.util.regex.Matcher;
+import java.util.regex.Pattern;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -101,6 +103,7 @@ public class Solution {
     //    8. Команды с победами над определенной командой: Определить команды, которые выиграли у заданной команды.
     public static void getWinnersOfCertainTeam(HashMap<Team<Participant>, Integer> map) {
         // Выбираем произвольную команду
+        System.out.println(8);
         Team<Participant> team = map.entrySet().stream()
                 .findFirst()
                 .map(Map.Entry::getKey)
@@ -108,8 +111,8 @@ public class Solution {
         System.out.println("Команды, победившие у команды " + team.getTeamName() + ": ");
         try {
             team.getGameList().stream()
-                    .filter(entry -> entry.getValue() == 10)
-                    .map(Map.Entry::getKey)
+                    .filter(game -> game.getMyPoints() == 0)
+                    .map(Game::getRival)
                     .forEach(System.out::println);
         } catch (NullPointerException e) {
             System.out.println("Команда не сыграла ни одной игры");
@@ -224,26 +227,27 @@ public class Solution {
 
     //    16. Найти команды, чьи баллы улучшались с каждой игрой.
     public static List<Team<Participant>> getTeamsWithIncreasedPoints(HashMap<Team<Participant>, Integer> map) {
+        System.out.println(16);
         return map.keySet().stream()
-                .filter(team -> team.getGameList().stream().allMatch(e -> e.getValue() != 0))
+                .filter(team -> team.getGameList().stream().allMatch(e -> e.getMyPoints() != 0))
                 .toList();
     }
 
     //    17. Выявить команды, которые не имеют проигрышей. - это то же самое, что предыдущий метод
     //    18. Список команд, которые имели ничейные результаты с заданной командой.
     public static void getTeamsWithDraw(HashMap<Team<Participant>, Integer> map) {
-
-            // Выбираем произвольную команду
-            Team<Participant> team = map.entrySet().stream()
-                    .findFirst()
-                    .map(Map.Entry::getKey)
-                    .orElse(null);
+        System.out.println(18);
+        // Выбираем произвольную команду
+        Team<Participant> team = map.entrySet().stream()
+                .findFirst()
+                .map(Map.Entry::getKey)
+                .orElse(null);
         System.out.println("Команды, которые имели ничейные результаты с командой " + team + ": ");
         try {
-                    // Ищем команды с ничейными результатами
-                    team.getGameList().stream()
-                    .filter(entry -> entry.getValue() == 5)
-                    .map(Map.Entry::getKey)
+            // Ищем команды с ничейными результатами
+            team.getGameList().stream()
+                    .filter(game -> game.getMyPoints() == 5)
+                    .map(Game::getRival)
                     .forEach(System.out::println);
         } catch (NullPointerException e) {
             System.out.println("Команда ни разу не играла");
@@ -252,8 +256,20 @@ public class Solution {
     }
 
     //    19. Вывести результаты всех игр между двумя конкретными командами.
-//    20. Сравнить две команды по средним баллам и среднему возрасту участников.
+    public static void showResultsOfTwoTeams(List<Team<Participant>> list) {
+        System.out.println(19);
+        Team<Participant> team1 = list.get(0);
+        Team<Participant> team2 = list.get(1);
+        team1.getGameList().stream()
+                .filter(games -> games.getRival() == team2)
+                .forEach(entry -> System.out.println("Команда " + team1.getTeamName() +
+                        " играла с командой " + team2.getTeamName() + " с результатом " + entry.getMyPoints()
+                        + ":" + entry.getRivalPoints()));
+    }
+
+    //    20. Сравнить две команды по средним баллам и среднему возрасту участников.
     public static void compareTwoTeams(HashMap<Team<Participant>, Integer> map) {
+        System.out.println(20);
         List<Map.Entry<Team<Participant>, Integer>> listOfTwoTeams = map.entrySet().stream()
                 .limit(2)
                 .toList();
@@ -284,16 +300,113 @@ public class Solution {
         }
     }
 
-    public static double getAverageAge(Team<? extends Participant> team) {
+    public static double getAverageAge(Team<Participant> team) {
         return team.getParticipantList().stream()
                 .mapToDouble(Participant::getAge)
                 .average()
                 .orElse(Double.NaN);
     }
-//    Найти команды, в которых все участники имеют уникальные имена.
-//    Определить команды с самой длинной последовательностью побед.
-//    Найти команды с наибольшим количеством ничьих результатов.
-//    Выявить команды, которые показали наибольшее улучшение баллов к концу сезона.
-//    Создать комплексный отчет, включающий средний возраст команды, общее количество баллов, наибольшую победную серию,
+
+    //    21. Найти команды, в которых все участники имеют уникальные имена.
+    public static void getTeamsWithUniqueParticipantName(HashMap<Team<Participant>, Integer> map) {
+        System.out.println(21);
+        System.out.println("Команды, в которых все участники имеют уникальные имена:");
+        map.keySet().stream()
+                .filter(team -> {
+                    List<String> nameList = team.getParticipantList().stream()
+                            .map(participant -> getFirstName(participant.getName()))
+                            .distinct()
+                            .toList();
+                    return nameList.size() == 4;
+                })
+                .forEach(team -> System.out.println(team.getTeamName()));
+    }
+
+    public static String getFirstName(String fullName) {
+        Pattern pattern = Pattern.compile("Dr\\. |Mr\\. |Mrs\\. |Ms\\. ");
+        Matcher matcher = pattern.matcher(fullName);
+        String stringWithoutPrefix = matcher.replaceAll("");
+        return stringWithoutPrefix.split(" ")[0];
+    }
+
+    //    22. Определить команды с самой длинной последовательностью побед.
+    public static void getTeamsWithLongestWinningStreak(HashMap<Team<Participant>, Integer> map) {
+        System.out.println(22);
+        System.out.println("Kоманды с самой длинной последовательностью побед:");
+        map.keySet().stream()
+                .collect(Collectors.groupingBy(Solution::getLongestWinningStreak))
+                .entrySet().stream()
+                .filter(entry -> {
+                    int max = map.keySet().stream().
+                            map(Solution::getLongestWinningStreak).max(Integer::compareTo).get();
+                    return entry.getKey() == max;
+                })
+                .forEach(System.out::println);
+    }
+    public static int getLongestWinningStreak(Team<Participant> team) {
+        List<Game> gameList = team.getGameList();
+        int longestWinningStreak = 0;
+        int winningStreak = 0;
+        boolean win = false;
+        for (int i = 0; i < gameList.size(); i++) {
+            if (gameList.get(i).getMyPoints() == 10) {
+                winningStreak++;
+                win = true;
+                if (i == gameList.size() - 1 && winningStreak > longestWinningStreak) {
+                    longestWinningStreak = winningStreak;
+                }
+            } else {
+                win = false;
+                if (winningStreak > longestWinningStreak) {
+                    longestWinningStreak = winningStreak;
+                }
+                winningStreak = 0;
+            }
+        }
+        return longestWinningStreak;
+    }
+//    23. Найти команды с наибольшим количеством ничьих результатов.
+public static void getTeamsWithBiggestNumberOfDraw(HashMap<Team<Participant>, Integer> map) {
+    System.out.println(23);
+    System.out.println("Kоманды с наибольшим количеством ничьих результатов:");
+    map.keySet().stream()
+            .collect(Collectors.groupingBy(Solution::getNumberOfDraw))
+            .entrySet().stream()
+            .filter(entry -> {
+                int max = map.keySet().stream().
+                        map(Solution::getNumberOfDraw).max(Integer::compareTo).get();
+                return entry.getKey() == max;
+            })
+            .forEach(System.out::println);
+}
+    public static int getNumberOfDraw(Team<Participant> team){
+        return (int)team.getGameList().stream()
+                .filter(game -> game.getMyPoints() == 5)
+                .count();
+
+    }
+//    24. Выявить команды, которые показали наибольшее улучшение баллов к концу сезона.
+//    25. Создать комплексный отчет, включающий средний возраст команды, общее количество баллов, наибольшую победную серию,
 //    и сравнение с другими командами.
+    public static void complexReport(HashMap<Team<Participant>, Integer> map){
+        Team<Participant> team = map.keySet().stream().findFirst().orElse(null);
+        System.out.println("Комплексный отчет команды " + team.getTeamName() + ":");
+        double averageAge = team.getParticipantList().stream()
+                .mapToDouble(Participant::getAge)
+                .average()
+                .orElse(Double.NaN);
+        System.out.println("Средний возраст команды: " + averageAge);
+        int points = map.get(team);
+        System.out.println("Общее количество баллов: " + points);
+        System.out.println("Наибольшая победная серия: " + getLongestWinningStreak(team));
+        System.out.println("Команда заняла " + getTeamPlace(map, team) + " место в своей группе" );
+    }
+    public static int getTeamPlace(HashMap<Team<Participant>, Integer> map, Team<Participant> team){
+        Class<? extends Participant> participantClass = team.getParticipantList().get(0).getClass();
+        return (int) map.entrySet().stream()
+                .filter(entry -> entry.getKey().getParticipantList().get(0).getClass() == participantClass)
+                .map(Map.Entry::getValue)
+                .filter(points -> points >= map.get(team))
+                .count();
+    }
 }

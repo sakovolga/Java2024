@@ -71,12 +71,22 @@ public class Main<T extends Participant> {
         System.out.println("Команды, чьи баллы улучшались с каждой игрой: " + Solution.getTeamsWithIncreasedPoints(allTeamsMap));
         //    18. Список команд, которые имели ничейные результаты с заданной командой.
         Solution.getTeamsWithDraw(allTeamsMap);
-
+        //    19. Вывести результаты всех игр между двумя конкретными командами.
+        Solution.showResultsOfTwoTeams(pupilTeamList);
 
         //    20. Сравнить две команды по средним баллам и среднему возрасту участников.
         Solution.compareTwoTeams(allTeamsMap);
+        //    21. Найти команды, в которых все участники имеют уникальные имена.
+        Solution.getTeamsWithUniqueParticipantName(allTeamsMap);
+        //    22. Определить команды с самой длинной последовательностью побед.
+        Solution.getTeamsWithLongestWinningStreak(allTeamsMap);
+        //    23. Найти команды с наибольшим количеством ничьих результатов.
+        Solution.getTeamsWithBiggestNumberOfDraw(allTeamsMap);
+        //    25. Создать комплексный отчет, включающий средний возраст команды, общее количество баллов, наибольшую победную серию,
+        //    и сравнение с другими командами.
+        Solution.complexReport(allTeamsMap);
 
-        Handler.printParticipants(allTeamsMap);
+//        Handler.printParticipants(allTeamsMap);
 
     }
 }

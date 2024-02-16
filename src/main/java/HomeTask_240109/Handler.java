@@ -15,9 +15,7 @@ public class Handler {
     }
 
     public static void printTableOfGames(HashMap<Team<Participant>, Integer> map) {
-        for (Map.Entry entry : map.entrySet()) {
-            System.out.println(entry);
-        }
+        map.entrySet().forEach(System.out::println);
     }
 
     public static HashMap<Team<Participant>, Integer> getOneDoubleTeam
@@ -41,56 +39,59 @@ public class Handler {
         List<Team<Participant>> list = doublePlayersMap.keySet().stream().toList();
         for (int i = 0; i < list.size() - 1; i++) {
             for (int j = i + 1; j < list.size(); j++) {
-                int point = list.get(i).rePlay(list.get(j));
-                if (point == 0.01) {
-                    int temp = map.get(list.get(i));
-                    temp = temp + 1;
-                    map.put(list.get(i), temp);
+                Team<Participant> player1 = list.get(i);
+                Team<Participant> player2 = list.get(j);
+                int point = player1.rePlay(player2);
+                if (point == 1) {
+                    map.put(player1, map.get(player1) + 1);
+                    logWinReplayGame(player1, player2);
                 } else {
-                    int temp = map.get(list.get(j));
-                    temp = temp + 1;
-                    map.put(list.get(j), temp);
+                    map.put(player2, map.get(player2) + 1);
+                    logWinReplayGame(player2, player1);
                 }
             }
         }
         return map;
     }
 
-    public static HashMap<Team<Participant>, Integer> playEachOther
-            (List<Team<Participant>> list) {
+    public static HashMap<Team<Participant>, Integer> playEachOther(List<Team<Participant>> list) {
         HashMap<Team<Participant>, Integer> points = new HashMap<>();
         for (Team<Participant> team : list) {
             points.put(team, 0);
         }
         for (int i = 0; i < list.size(); i++) {
             for (int j = i + 1; j < list.size(); j++) {
-                int point = list.get(i).play(list.get(j));
+                Team<Participant> player1 = list.get(i);
+                Team<Participant> player2 = list.get(j);
+                int point = player1.play(player2);
                 if (point == 10) {
-                    int temp = points.get(list.get(i));
-                    temp = temp + 10;
-                    points.put(list.get(i), temp);
-                    list.get(i).setGameList(list.get(j), 10);
-                    list.get(j).setGameList(list.get(i), 0);
+                    points.put(player1, points.get(player1) + 10);
+                    logWinBasicGame(player1, player2);
                 } else if (point == 0) {
-                    int temp = points.get(list.get(j));
-                    temp = temp + 10;
-                    points.put(list.get(j), temp);
-                    list.get(j).setGameList(list.get(i), 10);
-                    list.get(i).setGameList(list.get(j), 0);
+                    points.put(player2, points.get(player2) + 10);
+                    logWinBasicGame(player2, player1);
                 } else if (point == 5) {
-                    int temp = points.get(list.get(j));
-                    temp = temp + 5;
-                    points.put(list.get(j), temp);
-                    int temp1 = points.get(list.get(i));
-                    temp1 = temp1 + 5;
-                    points.put(list.get(i), temp1);
-                    list.get(j).setGameList(list.get(i), 5);
-                    list.get(i).setGameList(list.get(j), 5);
+                    points.put(player2, points.get(player2) + 5);
+                    points.put(player1, points.get(player1) + 5);
+                    logDrawGame(player1, player2);
                 }
             }
         }
         return sortHashMap1(points);
     }
+    static public void logWinBasicGame(Team<Participant> winner, Team<Participant> loser){
+        winner.setGameList(new Game(loser, 10, 0));
+        loser.setGameList(new Game(winner, 0, 10));
+    }
+    static public void logWinReplayGame(Team<Participant> winner, Team<Participant> loser){
+        winner.setGameList(new Game(loser, 1, 0));
+        loser.setGameList(new Game(winner, 0, 1));
+    }
+    static public void logDrawGame(Team<Participant> player1, Team<Participant> player2){
+        player1.setGameList(new Game(player2, 5, 5));
+        player2.setGameList(new Game(player1, 5, 5));
+    }
+
 
     public static HashMap<Team<Participant>, Integer> sortHashMap1
             (HashMap<Team<Participant>, Integer> map) {
@@ -107,10 +108,10 @@ public class Handler {
                         LinkedHashMap::new));
     }
 
-    public static void printParticipants(HashMap<Team<Participant>, Integer> map){
-        map.keySet().stream()
-                .flatMap(team -> team.getParticipantList().stream())
-                .forEach(participant -> System.out.println(participant));
-    }
+//    public static void printParticipants(HashMap<Team<Participant>, Integer> map){
+//        map.keySet().stream()
+//                .flatMap(team -> team.getParticipantList().stream())
+//                .forEach(participant -> System.out.println(participant));
+//    }
 
 }

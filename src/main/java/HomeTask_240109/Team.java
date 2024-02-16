@@ -1,29 +1,29 @@
 package HomeTask_240109;
 
+import lombok.Setter;
+
 import java.util.*;
 
 public class Team<T extends Participant> {
-    private String teamName;
+    private final String teamName;
+    @Setter
     private List<T> participantList = new ArrayList<>();
-    private ArrayList<Map.Entry<Team<? extends Participant>, Integer>> gameList = new ArrayList<>();
+    private List<Game> gameList = new ArrayList<>();
+//    private ArrayList<Map.Entry<Team<? extends Participant>, Integer>> gameList = new ArrayList<>();
     public Team(String teamName) {
         this.teamName = teamName;
     }
 
-    public ArrayList<Map.Entry<Team<? extends Participant>, Integer>> getGameList() {
+    public List<Game> getGameList() {
         return gameList;
     }
 
-    public void setGameList(Team<? extends Participant> team, Integer points) {
-        this.gameList.add(Map.entry(team, points));
+    public void setGameList(Game game) {
+        this.gameList.add(game);
     }
 
     public String getTeamName() {
         return teamName;
-    }
-
-    public void setParticipantList(List<T> participantList) {
-        this.participantList = participantList;
     }
 
     public List<T> getParticipantList() {

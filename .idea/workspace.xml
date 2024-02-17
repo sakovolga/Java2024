@@ -4,16 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49c7eab4-079e-4105-b34a-36a514abb2b0" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240109/Game.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240215_Testing/ComplexOperationsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/test/java/HomeTask_240215_Testing/ComplexOperationsServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HomeTask_240109/Handler.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240109/Handler.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HomeTask_240109/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240109/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HomeTask_240109/Solution.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240109/Solution.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/HomeTask_240109/Team.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240109/Team.java" afterDir="false" />
-    </list>
+    <list default="true" id="49c7eab4-079e-4105-b34a-36a514abb2b0" name="Changes" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />

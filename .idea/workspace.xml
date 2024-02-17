@@ -4,7 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="49c7eab4-079e-4105-b34a-36a514abb2b0" name="Changes" comment="" />
+    <list default="true" id="49c7eab4-079e-4105-b34a-36a514abb2b0" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/src/main/java/HomeTask_240217_Thread/Main2.java" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -14,8 +16,8 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Enum" />
-        <option value="Class" />
         <option value="JUnit5 Test Class" />
+        <option value="Class" />
       </list>
     </option>
   </component>
@@ -36,90 +38,90 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "ASKED_ADD_EXTERNAL_FILES": "true",
-    "Application.HomeTask_240109.Main.executor": "Run",
-    "Application.HomeTask_240125.taski.Main.executor": "Run",
-    "Application.Main.executor": "Run",
-    "Application.Main1.executor": "Run",
-    "Application.Main2.executor": "Run",
-    "Application.Main3.executor": "Run",
-    "JUnit.ComplexOperationsServiceTest.checkSumOfListAgainstThreshold.executor": "Run",
-    "JUnit.ComplexOperationsServiceTest.ensureNoDuplicateEntriesTest.executor": "Run",
-    "JUnit.ComplexOperationsServiceTest.executor": "Coverage",
-    "JUnit.ComplexOperationsServiceTest.validateIPAddressTest.executor": "Run",
-    "JUnit.ComplexOperationsServiceTest.validateIdentificationNumberNegativeTest.executor": "Run",
-    "JUnit.ComplexOperationsServiceTest.validateIdentificationNumberPositiveTest.executor": "Run",
-    "JUnit.ComplexOperationsServiceTest.validateIdentificationNumberPositiveTest1.executor": "Run",
-    "JUnit.ComplexOperationsServiceTest.validateIdentificationNumberTest.executor": "Run",
-    "JUnit.GeneratorTest.executor": "Run",
-    "JUnit.GeneratorTest.generate25Test.executor": "Run",
-    "JUnit.GeneratorTest.generate75Test.executor": "Run",
-    "JUnit.GeneratorTest.generateTeamTest.executor": "Run",
-    "JUnit.LibraryManagerTest.findAllBooks.executor": "Run",
-    "JUnit.LibraryManagerTest.findBookByIdTest.executor": "Run",
-    "JUnit.LibraryManagerTest.whenFindById_thenReturnBook.executor": "Run",
-    "JUnit.MainTest.executor": "Run",
-    "JUnit.MainTest.getAbsoluteTest.executor": "Run",
-    "JUnit.MainTest.getDivWithZeroTest.executor": "Run",
-    "JUnit.MainTest.getDivWithoutZeroTest.executor": "Run",
-    "JUnit.MainTest.getFactorialTest.executor": "Run",
-    "JUnit.MainTest.getFactorialWithNegativeParamTest.executor": "Run",
-    "JUnit.MainTest.getFactorialWithZeroAndOneParamTest.executor": "Run",
-    "JUnit.MainTest.getMultTest.executor": "Run",
-    "JUnit.MainTest.getMultWithZeroTest.executor": "Run",
-    "JUnit.MainTest.getPowerTest.executor": "Run",
-    "JUnit.MainTest.getPowerWithZeroTest.executor": "Run",
-    "JUnit.MainTest.getSubTest.executor": "Run",
-    "JUnit.MainTest.getSumTest.executor": "Run",
-    "JUnit.MainTest.logarithmTest.executor": "Run",
-    "JUnit.MainTest.logarithmWithNagativeOrZeroParamTest.executor": "Debug",
-    "JUnit.MainTest.sinTest.executor": "Run",
-    "JUnit.MainTest.sqrtTest.executor": "Run",
-    "JUnit.MainTest.sqrtWithZeroAvdOneTest.executor": "Run",
-    "JUnit.MyPaymentServiceTest.adjustPaymentScenario2Test.executor": "Run",
-    "JUnit.MyPaymentServiceTest.adjustPaymentScenario3Test.executor": "Run",
-    "JUnit.MyPaymentServiceTest.adjustPaymentTest.executor": "Run",
-    "JUnit.MyPaymentServiceTest.cancelPayment.executor": "Run",
-    "JUnit.MyPaymentServiceTest.cancelPaymentTest.executor": "Run",
-    "JUnit.MyPaymentServiceTest.confirmPaymentTest.executor": "Run",
-    "JUnit.MyPaymentServiceTest.freezeTransactionTest.executor": "Run",
-    "JUnit.MyPaymentServiceTest.makePaymentPositiveTest.executor": "Run",
-    "JUnit.MyPaymentServiceTest.refundPaymentTest.executor": "Run",
-    "JUnit.MyPaymentServiceTest.schedulePaymentTest.executor": "Run",
-    "JUnit.MyPaymentServiceTest.unfreezeTransactionTest.executor": "Run",
-    "JUnit.MyPaymentServiceTest.verifyPaymentTest.executor": "Run",
-    "JUnit.PaymentServiceTest.adjustPaymentTest.executor": "Run",
-    "JUnit.PaymentServiceTest.executor": "Run",
-    "JUnit.PaymentServiceTest.makePaymentNegativeTest.executor": "Run",
-    "JUnit.PaymentServiceTest.refundPaymentNegativeTest.executor": "Run",
-    "JUnit.PaymentServiceTest.refundPaymentPositiveTest.executor": "Run",
-    "JUnit.StudentRegistryTest.addStudentTest.executor": "Run",
-    "JUnit.StudentRegistryTest.calculateAverageGradeTest.executor": "Run",
-    "JUnit.StudentRegistryTest.executor": "Run",
-    "JUnit.StudentRegistryTest.findStudentsByMajorTest.executor": "Run",
-    "JUnit.StudentRegistryTest.getAverageGradeByMajorTest.executor": "Run",
-    "JUnit.StudentRegistryTest.getStudentTest.executor": "Run",
-    "JUnit.StudentRegistryTest.getStudentsWithGradeAboveTest.executor": "Run",
-    "JUnit.StudentRegistryTest.getTotalNumberOfStudentsTest.executor": "Run",
-    "JUnit.StudentRegistryTest.isStudentPresentNegativeTest.executor": "Run",
-    "JUnit.StudentRegistryTest.isStudentPresentPositiveTest.executor": "Run",
-    "JUnit.StudentRegistryTest.listStudentsByYearTest.executor": "Run",
-    "JUnit.StudentRegistryTest.removeStudentTest.executor": "Run",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary": "JUnit5",
-    "com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5": "",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/home/olga/190923",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.0",
-    "settings.editor.selected.configurable": "reference.settings.project.maven.repository.indices"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;ASKED_ADD_EXTERNAL_FILES&quot;: &quot;true&quot;,
+    &quot;Application.HomeTask_240109.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.HomeTask_240125.taski.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main1.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main2.executor&quot;: &quot;Run&quot;,
+    &quot;Application.Main3.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ComplexOperationsServiceTest.checkSumOfListAgainstThreshold.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ComplexOperationsServiceTest.ensureNoDuplicateEntriesTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ComplexOperationsServiceTest.executor&quot;: &quot;Coverage&quot;,
+    &quot;JUnit.ComplexOperationsServiceTest.validateIPAddressTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ComplexOperationsServiceTest.validateIdentificationNumberNegativeTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ComplexOperationsServiceTest.validateIdentificationNumberPositiveTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ComplexOperationsServiceTest.validateIdentificationNumberPositiveTest1.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.ComplexOperationsServiceTest.validateIdentificationNumberTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GeneratorTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GeneratorTest.generate25Test.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GeneratorTest.generate75Test.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.GeneratorTest.generateTeamTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LibraryManagerTest.findAllBooks.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LibraryManagerTest.findBookByIdTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.LibraryManagerTest.whenFindById_thenReturnBook.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTest.getAbsoluteTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTest.getDivWithZeroTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTest.getDivWithoutZeroTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTest.getFactorialTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTest.getFactorialWithNegativeParamTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTest.getFactorialWithZeroAndOneParamTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTest.getMultTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTest.getMultWithZeroTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTest.getPowerTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTest.getPowerWithZeroTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTest.getSubTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTest.getSumTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTest.logarithmTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTest.logarithmWithNagativeOrZeroParamTest.executor&quot;: &quot;Debug&quot;,
+    &quot;JUnit.MainTest.sinTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTest.sqrtTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MainTest.sqrtWithZeroAvdOneTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyPaymentServiceTest.adjustPaymentScenario2Test.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyPaymentServiceTest.adjustPaymentScenario3Test.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyPaymentServiceTest.adjustPaymentTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyPaymentServiceTest.cancelPayment.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyPaymentServiceTest.cancelPaymentTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyPaymentServiceTest.confirmPaymentTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyPaymentServiceTest.freezeTransactionTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyPaymentServiceTest.makePaymentPositiveTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyPaymentServiceTest.refundPaymentTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyPaymentServiceTest.schedulePaymentTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyPaymentServiceTest.unfreezeTransactionTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.MyPaymentServiceTest.verifyPaymentTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PaymentServiceTest.adjustPaymentTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PaymentServiceTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PaymentServiceTest.makePaymentNegativeTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PaymentServiceTest.refundPaymentNegativeTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.PaymentServiceTest.refundPaymentPositiveTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StudentRegistryTest.addStudentTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StudentRegistryTest.calculateAverageGradeTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StudentRegistryTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StudentRegistryTest.findStudentsByMajorTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StudentRegistryTest.getAverageGradeByMajorTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StudentRegistryTest.getStudentTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StudentRegistryTest.getStudentsWithGradeAboveTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StudentRegistryTest.getTotalNumberOfStudentsTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StudentRegistryTest.isStudentPresentNegativeTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StudentRegistryTest.isStudentPresentPositiveTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StudentRegistryTest.listStudentsByYearTest.executor&quot;: &quot;Run&quot;,
+    &quot;JUnit.StudentRegistryTest.removeStudentTest.executor&quot;: &quot;Run&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary&quot;: &quot;JUnit5&quot;,
+    &quot;com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit5&quot;: &quot;&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/home/olga/190923&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/java/HomeTask_240209_Mock" />
@@ -138,11 +140,25 @@
       <recent name="HomeTask_240206" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="HomeTask_240217_Thread" />
       <recent name="HomeTask_240215_Testing" />
       <recent name="HomeTask_240109" />
     </key>
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Main2">
+    <configuration name="Main2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="HomeTask_240217_Thread.Main2" />
+      <module name="Java2024" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="HomeTask_240217_Thread.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ComplexOperationsServiceTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Java2024" />
       <extension name="coverage">
@@ -206,29 +222,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ComplexOperationsServiceTest.validateIdentificationNumberPositiveTest1" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Java2024" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="HomeTask_240215_Testing.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="HomeTask_240215_Testing" />
-      <option name="MAIN_CLASS_NAME" value="HomeTask_240215_Testing.ComplexOperationsServiceTest" />
-      <option name="METHOD_NAME" value="validateIdentificationNumberPositiveTest1(java.lang.String)" />
-      <option name="TEST_OBJECT" value="method" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.Main2" />
         <item itemvalue="JUnit.ComplexOperationsServiceTest" />
         <item itemvalue="JUnit.ComplexOperationsServiceTest.ensureNoDuplicateEntriesTest" />
         <item itemvalue="JUnit.ComplexOperationsServiceTest.validateIPAddressTest" />
         <item itemvalue="JUnit.ComplexOperationsServiceTest.checkSumOfListAgainstThreshold" />
-        <item itemvalue="JUnit.ComplexOperationsServiceTest.validateIdentificationNumberPositiveTest1" />
       </list>
     </recent_temporary>
   </component>

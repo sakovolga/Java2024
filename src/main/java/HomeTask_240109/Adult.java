@@ -10,16 +10,3 @@ public class Adult extends Participant{
 
 }
 
-class TeenAger extends Participant {
-    public TeenAger(){}
-    public TeenAger(String name, int age, String card) {
-        super(name, age, card);
-    }
-}
-
-class Pupil extends Participant {
-    public Pupil(){}
-    public Pupil(String name, int age, String card) {
-        super(name, age, card);
-    }
-}

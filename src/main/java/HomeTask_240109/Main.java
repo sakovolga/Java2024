@@ -27,30 +27,31 @@ public class Main<T extends Participant> {
         System.out.println("----Таблица игр взрослых----");
         HashMap<Team<Participant>, Integer> adultMap = Handler.play(adultTeamList);
         Handler.printTableOfGames(adultMap);
+        Solution sl = new Solution();
 
         HashMap<Team<Participant>, Integer> allTeamsMap = Solution.getAllTeamsMap(pupilMap, teenagerMap, adultMap);
         //    1. Найти команду с максимальными баллами:
-        System.out.println("Команда с максимальными баллами: " + Solution.findTeamWithMaxPoints(allTeamsMap));
+        System.out.println(sl.findTeamWithMaxPoints(allTeamsMap));
         //    2. Подсчет общего количества баллов:
-        System.out.println("Общее количество баллов: " + Solution.findSumOfPoints(allTeamsMap));
+        System.out.println("Общее количество баллов: " + sl.findSumOfPoints(allTeamsMap));
         //    3. Список команд без баллов:
-        System.out.println("Список команд без баллов: " + Solution.getTeamsWithoutPoints(allTeamsMap));
+        System.out.println("Список команд без баллов: " + sl.getTeamsWithoutPoints(allTeamsMap));
         //    4. Средний возраст участников в каждой команде:
         System.out.println("Средний возраст участников в каждой команде:");
-        Solution.getAverageAgeOfEachTeam(allTeamsMap);
+        sl.getAverageAgeOfEachTeam(allTeamsMap);
         //    5. Команды с баллами выше среднего:
         System.out.println("Команды с баллами выше среднего:");
-        System.out.println(Solution.getTeamsWithPointMoreThenAverage(allTeamsMap));
+        System.out.println(sl.getTeamsWithPointMoreThenAverage(allTeamsMap));
         //    6. Сортировка команд по баллам:
         System.out.println("Сортировка команд по баллам:");
-        System.out.println(Solution.sortHashMap(allTeamsMap));
+        System.out.println(sl.sortHashMap(allTeamsMap));
         //    7. Команды с определенной категорией участников:
         //    Вывести команды, где все участники принадлежат к одной категории
         //    (например, только Adult).
         System.out.println("Команды, где все участники принадлежат к категории Adult:");
-        System.out.println(Solution.getTeamsOfCertainCategory(allTeamsMap, Adult.class));
+        System.out.println(sl.getTeamsOfCertainCategory(allTeamsMap, Adult.class));
         //    8. Команды с победами над определенной командой: Определить команды, которые выиграли у заданной команды.
-        Solution.getWinnersOfCertainTeam(allTeamsMap);
+        System.out.println(sl.getWinnersOfCertainTeam(allTeamsMap, pupilTeamList.get(0)));
         //    9. Самый молодой участник среди всех команд:
         System.out.println("Самый молодой участник среди всех команд: " + Solution.getYoungestParticipant(allTeamsMap));
         //    10. Самая опытная команда: Определить команду с наибольшим суммарным возрастом участников.
@@ -86,7 +87,32 @@ public class Main<T extends Participant> {
         //    и сравнение с другими командами.
         Solution.complexReport(allTeamsMap);
 
-//        Handler.printParticipants(allTeamsMap);
+        Handler.printParticipants(allTeamsMap);
+        System.out.println("______________");
+        Team<Participant> participantTeam1 = new Team<>("New Hampshire chickens");
+        Team<Participant> participantTeam2 = new Team<>("Alabama sorcerors");
+        Team<Participant> participantTeam3 = new Team<>("Wyoming druids");
+        List<Team<Participant>> pulilTeamList = List.of(participantTeam1, participantTeam2, participantTeam3);
+
+        Team<Participant> participantTeam4 = new Team<>("Georgia spiders");
+        Team<Participant> participantTeam5 = new Team<>("South Dakota chimeras");
+        Team<Participant> participantTeam6 = new Team<>("California prophets");
+        List<Team<Participant>> teenagerTeamList = List.of(participantTeam4, participantTeam5, participantTeam6);
+
+        Team<Participant> participantTeam7 = new Team<>("Kentucky gooses");
+        Team<Participant> participantTeam8 = new Team<>("Virginia griffins");
+        Team<Participant> participantTeam9 = new Team<>("Montana zebras");
+        List<Team<Participant>> adultteamList = List.of(participantTeam7, participantTeam8, participantTeam9);
+
+        System.out.println("----Таблица игр младшей группы----");
+        HashMap<Team<Participant>, Integer> pMap = Handler.play(pulilTeamList);
+        Handler.printTableOfGames(pMap);
+        System.out.println("----Таблица игр подростков----");
+        HashMap<Team<Participant>, Integer> tMap = Handler.play(teenagerTeamList);
+        Handler.printTableOfGames(tMap);
+        System.out.println("----Таблица игр взрослых----");
+        HashMap<Team<Participant>, Integer> aMap = Handler.play(adultteamList);
+        Handler.printTableOfGames(aMap);
 
     }
 }

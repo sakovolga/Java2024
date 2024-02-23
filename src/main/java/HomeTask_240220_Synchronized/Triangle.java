@@ -58,7 +58,7 @@ class Car {
         }
         wheel++;
         System.out.println("Монтаж колес " + wheel);
-        notifyAll();
+        notify();
     }
 
     public synchronized void electronicMounting() {
@@ -82,7 +82,7 @@ class Car {
             electronicDevice = 0;
             System.out.println("Конвейер пуст!");
         }
-        notifyAll();
+        notify();
     }
 }
 
